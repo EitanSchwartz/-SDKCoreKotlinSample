@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_classic_widget"
+            android:title="@string/classic_widget" />
+        <item
+            android:id="@+id/nav_classic_feed"
+            android:title="@string/classic_feed" />
+        <item
+            android:id="@+id/nav_classic_widget_xml"
+            android:title="Classic XML" />
+        <item
+            android:id="@+id/nav_classic_viewpager"
+            android:title="Classic ViewPager" />
+        <item
+            android:id="@+id/nav_web_widget"
+            android:title="@string/web_widget" />
+        <item
+            android:id="@+id/nav_web_feed"
+            android:title="@string/web_feed" />
+        <item
+            android:id="@+id/nav_native_widget"
+            android:title="@string/native_widget" />
+        <item
+            android:id="@+id/nav_native_feed"
+            android:title="@string/native_feed" />
+    </group>
+</menu>
