@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:id="@+id/content_layout"
     android:orientation="vertical"
-    tools:context=".screens.classic.ProgramaticWidgetFragment">
+    tools:context=".screens.classic.ProgrammaticWidgetFragment">
 
     <WebView
         android:id="@+id/customer_webview"

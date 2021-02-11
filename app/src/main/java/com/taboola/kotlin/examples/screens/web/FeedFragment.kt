@@ -42,7 +42,12 @@ class FeedFragment : Fragment() {
         //If not already set in your WebView
         webView.settings.javaScriptEnabled = true
 
-        return Taboola.getWebPage().build(webView, object: TBLWebListener(){})
+        return Taboola.getWebPage().build(webView, object: TBLWebListener(){
+            override fun onItemClick(placementName: String?, itemId: String?, clickUrl: String?, isOrganic: Boolean, customData: String?): Boolean {
+                println("Taboola | onItemClick | isOrganic = $isOrganic")
+                return super.onItemClick(placementName, itemId, clickUrl, isOrganic, customData)
+            }
+        })
     }
 
     /**

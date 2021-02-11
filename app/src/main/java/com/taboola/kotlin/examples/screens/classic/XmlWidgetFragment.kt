@@ -6,7 +6,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.LinearLayout
 import androidx.fragment.app.Fragment
-import com.taboola.android.TBLClassicPage
 import com.taboola.android.TBLClassicUnit
 import com.taboola.android.Taboola
 import com.taboola.android.annotations.TBL_PLACEMENT_TYPE
@@ -18,11 +17,10 @@ class XmlWidgetFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val root = inflater.inflate(R.layout.fragment_classic_xml, container, false)
-        val contentLayout = root.findViewById<LinearLayout>(R.id.content_layout)
 
         // Find the Taboola Unit in XML layout
         val classicUnit = root.findViewById<TBLClassicUnit>(R.id.classic_unit)
-        val properties = PlacementInfo.widgetProperites()
+        val properties = PlacementInfo.widgetProperties()
 
         // Create a Taboola Page that represents this screen
         val taboolaPage = Taboola.getClassicPage(properties.pageUrl, properties.pageType)

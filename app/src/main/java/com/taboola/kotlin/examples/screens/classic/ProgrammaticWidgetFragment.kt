@@ -14,14 +14,14 @@ import com.taboola.android.listeners.TBLClassicListener
 import com.taboola.kotlin.examples.PlacementInfo
 import com.taboola.kotlin.examples.R
 
-class ProgramaticWidgetFragment : Fragment() {
+class ProgrammaticWidgetFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val root = inflater.inflate(R.layout.fragment_classic_programatic, container, false)
         val contentLayout = root.findViewById<LinearLayout>(R.id.content_layout)
 
         // Create and return a Taboola Unit
-        val classicUnit = getTaboolaUnit(PlacementInfo.widgetProperites())
+        val classicUnit = getTaboolaUnit(PlacementInfo.widgetProperties())
 
         // Add Unit to layout
         contentLayout.addView(classicUnit)

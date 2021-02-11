@@ -11,7 +11,7 @@ class PlacementInfo {
         val mode = "thumbs-feed-01"
     }
 
-    class WidgetProperites : Properties() {
+    class WidgetProperties : Properties() {
         override val placementName = "Widget without video"
     }
 
@@ -29,7 +29,7 @@ class PlacementInfo {
 
     // Static access
     companion object  {
-        fun widgetProperites() = WidgetProperites()
+        fun widgetProperties() = WidgetProperties()
         fun classicFeedProperties() = ClassicFeedProperties()
         fun nativeFeedProperties() = NativeFeedProperties()
         fun webFeedProperties() = WebFeedProperties()

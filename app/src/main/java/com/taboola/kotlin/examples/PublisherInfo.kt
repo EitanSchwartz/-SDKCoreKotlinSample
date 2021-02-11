@@ -3,6 +3,7 @@ package com.taboola.kotlin.examples
 /**
  * Global definitions for customer identification in Taboola.
  */
+
 class PublisherInfo {
     companion object {
         val PUBLISHER = "sdk-tester-rnd"

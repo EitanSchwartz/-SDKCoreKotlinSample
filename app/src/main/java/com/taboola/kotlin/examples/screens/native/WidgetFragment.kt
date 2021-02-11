@@ -18,7 +18,7 @@ class WidgetFragment : Fragment() {
         val contentLayout = root.findViewById<LinearLayout>(R.id.content_layout)
 
         // Define Placement properties
-        val placementProperties = PlacementInfo.widgetProperites()
+        val placementProperties = PlacementInfo.widgetProperties()
 
         // Create and return a Taboola Unit
         val nativeUnit = getTaboolaUnit(placementProperties)

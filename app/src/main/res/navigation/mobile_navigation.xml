@@ -8,7 +8,7 @@
 
     <fragment
         android:id="@+id/nav_classic_widget"
-        android:name="com.taboola.kotlin.examples.screens.classic.ProgramaticWidgetFragment"
+        android:name="com.taboola.kotlin.examples.screens.classic.ProgrammaticWidgetFragment"
         android:label="@string/classic_widget"
         tools:layout="@layout/fragment_classic_programatic" />
 

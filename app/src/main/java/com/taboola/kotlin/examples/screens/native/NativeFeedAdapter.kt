@@ -22,6 +22,11 @@ class NativeFeedAdapter(data: List<Any>) : RecyclerView.Adapter<ViewHolder>() {
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+        if (mData == null) {
+            println("Data is null.")
+            return
+        }
+
         val item = mData!![position] as TBLRecommendationItem
         val adContainer = (holder as TaboolaItemViewHolder).mAdContainer
         val context = adContainer.context
@@ -42,6 +47,10 @@ class NativeFeedAdapter(data: List<Any>) : RecyclerView.Adapter<ViewHolder>() {
 
 
     override fun getItemCount(): Int {
+        if (mData == null) {
+            return 0
+        }
+
         return mData!!.size
     }
 

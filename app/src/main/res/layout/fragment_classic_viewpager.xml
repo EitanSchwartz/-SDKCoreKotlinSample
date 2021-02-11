@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:id="@+id/content_layout"
     android:orientation="vertical"
-    tools:context=".screens.classic.ProgramaticWidgetFragment">
+    tools:context=".screens.classic.ProgrammaticWidgetFragment">
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/viewpager"

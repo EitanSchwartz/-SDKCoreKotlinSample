@@ -4,16 +4,9 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.LinearLayout
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import androidx.viewpager2.widget.ViewPager2
-import com.taboola.android.TBLClassicPage
-import com.taboola.android.TBLClassicUnit
-import com.taboola.android.Taboola
-import com.taboola.android.annotations.TBL_PLACEMENT_TYPE
-import com.taboola.android.listeners.TBLClassicListener
-import com.taboola.kotlin.examples.PlacementInfo
 import com.taboola.kotlin.examples.R
 
 private const val NUM_PAGES = 2
@@ -43,10 +36,9 @@ class ViewPagerFragment : Fragment() {
     private inner class ScreenSlidePagerAdapter(hostFragment: Fragment) : FragmentStateAdapter(hostFragment) {
         override fun getItemCount(): Int = NUM_PAGES
 
-//        override fun createFragment(position: Int): Fragment = ClassicWidgetFragment()
         override fun createFragment(position: Int): Fragment {
             return when (position) {
-                0 -> ProgramaticWidgetFragment()
+                0 -> ProgrammaticWidgetFragment()
                 1 -> FeedFragment()
                 else -> XmlWidgetFragment()
             }

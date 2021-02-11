@@ -32,11 +32,8 @@ class FeedFragment : Fragment() {
         // Setup RecyclerView
         setupRecyclerView()
 
-        // Define Placement properties
-        val placementProperties = PlacementInfo.nativeFeedProperties()
-
         // Create and return a Taboola Unit
-        getTaboolaUnit(placementProperties)
+        getTaboolaUnit(PlacementInfo.nativeFeedProperties())
 
         // Fetch content for Unit
         fetchInitialContent()
